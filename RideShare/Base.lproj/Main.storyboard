@@ -69,17 +69,6 @@
                                     <constraint firstAttribute="height" constant="30" id="Abh-w5-pp5"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlb-2N-ZDm">
-                                <rect key="frame" x="6" y="587" width="363" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="40O-G7-906"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
-                                <state key="normal" title="Request Ride">
-                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXs-2f-HMx">
                                 <rect key="frame" x="309" y="519" width="60" height="60"/>
                                 <constraints>
@@ -169,31 +158,57 @@
                                     <constraint firstItem="83L-gY-W0A" firstAttribute="top" secondItem="EUG-xF-Wnw" secondAttribute="top" constant="10" id="xrm-Sx-cKm"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U0l-Sm-J8F">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlb-2N-ZDm" customClass="RoundedShadowButton" customModule="RideShare" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="40O-G7-906"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <state key="normal" title="Request Ride">
+                                            <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="977-Bs-xPi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rlb-2N-ZDm" firstAttribute="top" secondItem="U0l-Sm-J8F" secondAttribute="top" id="T0K-Dy-LZi"/>
+                                    <constraint firstAttribute="height" constant="80" id="eYc-1u-I72"/>
+                                    <constraint firstItem="rlb-2N-ZDm" firstAttribute="leading" secondItem="U0l-Sm-J8F" secondAttribute="leading" constant="20" id="krz-Pe-jnp"/>
+                                    <constraint firstAttribute="trailing" secondItem="rlb-2N-ZDm" secondAttribute="trailing" constant="20" id="pHO-ml-gn1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dn2-cs-cmd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="191-bd-Ea2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rlb-2N-ZDm" secondAttribute="trailing" constant="6" id="1mF-xL-9Ql"/>
                             <constraint firstItem="dn2-cs-cmd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3T5-Yl-5kF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rlb-2N-ZDm" secondAttribute="bottom" constant="20" id="6Vh-vG-hBj"/>
-                            <constraint firstItem="rlb-2N-ZDm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="9jl-bv-UGp"/>
                             <constraint firstItem="OZe-mj-1dw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EWr-0d-Piv"/>
+                            <constraint firstItem="U0l-Sm-J8F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FeW-GC-0A2"/>
+                            <constraint firstItem="U0l-Sm-J8F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GL0-Q6-R0c"/>
                             <constraint firstItem="OZe-mj-1dw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HPQ-Nq-rUp"/>
                             <constraint firstItem="OZe-mj-1dw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HPy-VW-qTs"/>
+                            <constraint firstItem="U0l-Sm-J8F" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="O4R-n3-Kmg"/>
                             <constraint firstItem="dn2-cs-cmd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R6M-Or-5rI"/>
-                            <constraint firstItem="rlb-2N-ZDm" firstAttribute="top" secondItem="bXs-2f-HMx" secondAttribute="bottom" constant="8" id="U4o-1f-V64"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EUG-xF-Wnw" secondAttribute="trailing" constant="12" id="UKO-Yc-v8y"/>
                             <constraint firstItem="EUG-xF-Wnw" firstAttribute="top" secondItem="LVk-8c-Kq4" secondAttribute="bottom" constant="6" id="X73-Ti-oiK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LVk-8c-Kq4" secondAttribute="trailing" constant="6" id="YwG-Wx-RHh"/>
                             <constraint firstItem="OZe-mj-1dw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zoy-dA-MMw"/>
                             <constraint firstItem="EUG-xF-Wnw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="aQZ-Dt-btj"/>
                             <constraint firstItem="LVk-8c-Kq4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="g6U-Mb-UXQ"/>
+                            <constraint firstItem="U0l-Sm-J8F" firstAttribute="top" secondItem="bXs-2f-HMx" secondAttribute="bottom" constant="8" id="hj4-gW-GIf"/>
                             <constraint firstItem="LVk-8c-Kq4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="qxM-lx-k4U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bXs-2f-HMx" secondAttribute="trailing" constant="6" id="tbS-Fx-SUy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="actionBtn" destination="rlb-2N-ZDm" id="tfD-Cp-djP"/>
                         <outlet property="mapView" destination="OZe-mj-1dw" id="Gga-PO-WOX"/>
                     </connections>
                 </viewController>
