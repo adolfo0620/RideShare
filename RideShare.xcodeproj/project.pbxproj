@@ -11,6 +11,7 @@
 		3E10E668201C2A6300AE7758 /* LeftSidenPanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10E667201C2A6300AE7758 /* LeftSidenPanelVC.swift */; };
 		3E10E66A201C2B3400AE7758 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10E669201C2B3400AE7758 /* ContainerVC.swift */; };
 		3E10E66D201C2E8C00AE7758 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10E66C201C2E8C00AE7758 /* CenterVCDelegate.swift */; };
+		3E10E6702020028000AE7758 /* UIVIewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10E66F2020028000AE7758 /* UIVIewExt.swift */; };
 		3E744A2B2011735500D4D95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E744A2A2011735500D4D95B /* AppDelegate.swift */; };
 		3E744A2D2011735500D4D95B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E744A2C2011735500D4D95B /* HomeVC.swift */; };
 		3E744A302011735500D4D95B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E744A2E2011735500D4D95B /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		3E10E667201C2A6300AE7758 /* LeftSidenPanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidenPanelVC.swift; sourceTree = "<group>"; };
 		3E10E669201C2B3400AE7758 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		3E10E66C201C2E8C00AE7758 /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
+		3E10E66F2020028000AE7758 /* UIVIewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExt.swift; sourceTree = "<group>"; };
 		3E744A272011735500D4D95B /* RideShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E744A2A2011735500D4D95B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E744A2C2011735500D4D95B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		3E10E66E2020024C00AE7758 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E10E66F2020028000AE7758 /* UIVIewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3E744A1E2011735500D4D95B = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		3E744A292011735500D4D95B /* RideShare */ = {
 			isa = PBXGroup;
 			children = (
+				3E10E66E2020024C00AE7758 /* Extensions */,
 				3E10E66B201C2E5100AE7758 /* Protocols */,
 				3E744A3E2016BCD900D4D95B /* View */,
 				3E744A3D2016BCD000D4D95B /* Controller */,
@@ -286,6 +297,7 @@
 				3E744A482016C9C800D4D95B /* RoundedShadowButton.swift in Sources */,
 				3E744A462016C7FA00D4D95B /* CircleView.swift in Sources */,
 				3E10E66A201C2B3400AE7758 /* ContainerVC.swift in Sources */,
+				3E10E6702020028000AE7758 /* UIVIewExt.swift in Sources */,
 				3E744A2D2011735500D4D95B /* HomeVC.swift in Sources */,
 				3E744A422016C4BF00D4D95B /* RoundImageView.swift in Sources */,
 				3E744A442016C67200D4D95B /* RoundedShadowView.swift in Sources */,
