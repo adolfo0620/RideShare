@@ -262,6 +262,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpLoginBtnWasPressed:" destination="U4l-CF-TZO" eventType="touchUpInside" id="kI8-8s-N5D"/>
+                                    <action selector="signupLoginBtnWasPressed:" destination="U4l-CF-TZO" eventType="touchUpInside" id="2AT-95-xbs"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ae7-rL-qvQ">
@@ -335,13 +336,16 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pks-Yn-i7K">
-                                            <rect key="frame" x="20" y="30" width="30" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pks-Yn-i7K">
+                                            <rect key="frame" x="20" y="28" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="EQX-Aq-5MS"/>
                                                 <constraint firstAttribute="height" constant="30" id="fEk-qZ-jrM"/>
                                             </constraints>
                                             <state key="normal" image="cancelBtn"/>
+                                            <connections>
+                                                <action selector="cancelBtnWasPressed:" destination="NVd-pC-ctS" eventType="touchUpInside" id="Lou-Zr-C4u"/>
+                                            </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="x25-d4-a1h">
                                             <rect key="frame" x="37.5" y="115.5" width="300" height="376"/>
@@ -395,7 +399,7 @@
                                                     </segments>
                                                     <color key="tintColor" red="0.84705882349999995" green="0.2784313725" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                                 </segmentedControl>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d57-l6-btw">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d57-l6-btw" customClass="RounderCornerTextField" customModule="RideShare" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="236" width="300" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="kLs-lm-1Nd"/>
@@ -404,7 +408,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X12-Hr-ni3">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X12-Hr-ni3" customClass="RounderCornerTextField" customModule="RideShare" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="316" width="300" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="MTE-Pe-JlP"/>
